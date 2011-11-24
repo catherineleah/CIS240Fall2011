@@ -1,0 +1,7 @@
+clear
+reset
+as os os
+as user_square user_square
+ld os
+ld user_square
+break set END_PROGRAM

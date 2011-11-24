@@ -1,0 +1,7 @@
+clear
+reset
+as os os
+as user_echo user_echo
+ld os
+ld user_echo
+break set END_PROGRAM
