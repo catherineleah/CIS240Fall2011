@@ -1,6 +1,0 @@
-clear
-reset
-as os os
-as tetris3 libc tetris3
-ld os
-ld tetris3
