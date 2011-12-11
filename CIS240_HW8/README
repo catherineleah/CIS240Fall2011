@@ -1,0 +1,34 @@
+Online Shopping Cart Simulation
+CIS240, Fall 2011, University of Pennsylvania
+Catherine Hu
+
+Files: shopper.c
+
+This is a simulation of an online shopping cart which takes an input file
+containing updates to be processed by the program. 
+
+The program is executed with the command "shopper file_name.txt", where 
+file_name is any arbitrary name. Any extra files passed as an argument
+will be ignored, and no error will be thrown. However, an error will be
+thrown if there are no files passed as an argument.
+
+The program expects files to be formatted as per the following example:
+ITEM	  2
+iTem	  5
+ITem2	  10
+iTEM3	  -5
+item2	  -20
+iteM3	  20
+item	  3
+
+Item names should not contain spaces and should not be longer than 120
+characters. If the item name is not followed by an integer, it is 
+considered a formatting error. However, if the line contains more 
+characters of any kind after a correctly formatted item-number pair, 
+those extraneous characters are ignored.
+
+Upon encountering a line that does not contain a properly formatted
+item-number pair, the program will print an error message and then 
+continue reading the file. 
+
+Blank lines are ignored.
